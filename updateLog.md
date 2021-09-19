@@ -1,5 +1,9 @@
 # Software Update Log
 
+## 9/19/21
+
+Steward pages now redirect properly for both roots and sub directories
+
 ## 9/1/21
 
 Cleaned up repository and added documentation

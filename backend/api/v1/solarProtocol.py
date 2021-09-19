@@ -35,6 +35,9 @@ localDataFile = "/home/pi/solar-protocol/charge-controller/data/tracerData"+ str
 
 logging.basicConfig(filename='/home/pi/solar-protocol/backend/api/v1/poe.log', level=logging.INFO)
 
+# solarProtocol.py doesn't check the config file for port so it must be hardcoded
+beijingDST = "http://beijing.solarprotocol.xyz:10000/"
+
 #initialize SolarProtocolClass
 SP = SolarProtocol()
 
@@ -90,7 +93,7 @@ def determineServer(remoteData,localData):
 		#print(SP.getEnv('DNS_KEY'))
 
 		#getDNS(requests.get('http://whatismyip.akamai.com/').text)
-		SP.getRequest(SP.updateDNS(SP.myIP,str(SP.getEnv('DNS_KEY'))))
+		SP.getRequest(SP.updateDNS(beijingDST,str(SP.getEnv('DNS_KEY'))))
 
 	else:
 		print('Not point of entry')

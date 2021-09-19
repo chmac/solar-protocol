@@ -241,7 +241,10 @@ def get_ips():
     # deviceInfoFile = "/home/pi/solar-protocol/backend/api/v1/deviceList.json"
     # deviceInfo = json.dumps(deviceInfoFile)
     #Get my ip
-    myIP = 	requests.get('http://whatismyip.akamai.com/').text
+    # myIP = 	requests.get('http://whatismyip.akamai.com/').text
+    # solarProtocol.py doesn't check the config file for port so it must be hardcoded
+    myIP = "beijing.solarprotocol.xyz:10000"
+
     print("MY IP: ", type(myIP))
 
     #Get IPs, using keyword ip
@@ -326,7 +329,8 @@ def check_images(server_data):
         filepath = "images/servers/" + filename
         #print("server:", server)
         if "ip" in server:
-            myIP = 	requests.get('http://whatismyip.akamai.com/').text
+            # myIP = 	requests.get('http://whatismyip.akamai.com/').text
+            myIP =  "beijing.solarprotocol.xyz:10000"
             print("Server IP:", server["ip"])
             print("myIP", myIP)
             if server["ip"] == "localhost": #if it is itself

@@ -323,7 +323,8 @@ def circles(sw, opacity):
 # -------------- PROGRAM --------------------------------------------------------------------------------
 def main():
     #Get my ip
-    myIP = 	requests.get('http://whatismyip.akamai.com/').text
+    # myIP = 	requests.get('http://whatismyip.akamai.com/').text
+    myIP = "beijing.solarprotocol.xyz:10000"
     # print("MY IP: ", type(myIP))
 
     #Get IPs, using keyword ip
