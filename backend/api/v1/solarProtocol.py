@@ -36,7 +36,8 @@ localDataFile = "/home/pi/solar-protocol/charge-controller/data/tracerData"+ str
 logging.basicConfig(filename='/home/pi/solar-protocol/backend/api/v1/poe.log', level=logging.INFO)
 
 # solarProtocol.py doesn't check the config file for port so it must be hardcoded
-beijingDST = "132.145.123.98:10000" #"http://beijing.solarprotocol.xyz:10000/"
+#beijingDST = "132.145.123.98:10000" #"http://beijing.solarprotocol.xyz:10000/"
+beijingDST = "beijing.solarprotocol.xyz:10000"
 
 #initialize SolarProtocolClass
 SP = SolarProtocol()
