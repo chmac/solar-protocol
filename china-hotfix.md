@@ -8,3 +8,8 @@ Instead of making external call to get public IP, the IP must be hardcoded.
 * solarProtocol.py - ip + port
 * create_html.py - 2x ip + port
 * viz.py - ip + port
+
+
+## Git 
+
+`git pull https://github.com.cnpmjs.org/alexnathanson/solar-protocol/ china-hotfix`
