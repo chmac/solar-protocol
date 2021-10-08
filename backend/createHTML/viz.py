@@ -324,7 +324,7 @@ def circles(sw, opacity):
 def main():
     #Get my ip
     # myIP = 	requests.get('http://whatismyip.akamai.com/').text
-    myIP = "beijing.solarprotocol.xyz:10000"
+    myIP = "132.145.123.98:10001"
     # print("MY IP: ", type(myIP))
 
     #Get IPs, using keyword ip

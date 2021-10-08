@@ -243,7 +243,7 @@ def get_ips():
     #Get my ip
     # myIP = 	requests.get('http://whatismyip.akamai.com/').text
     # solarProtocol.py doesn't check the config file for port so it must be hardcoded
-    myIP = "beijing.solarprotocol.xyz:10000"
+    myIP = "132.145.123.98:10001"
 
     print("MY IP: ", type(myIP))
 
@@ -330,7 +330,7 @@ def check_images(server_data):
         #print("server:", server)
         if "ip" in server:
             # myIP = 	requests.get('http://whatismyip.akamai.com/').text
-            myIP =  "beijing.solarprotocol.xyz:10000"
+            myIP =  "132.145.123.98:10001"
             print("Server IP:", server["ip"])
             print("myIP", myIP)
             if server["ip"] == "localhost": #if it is itself

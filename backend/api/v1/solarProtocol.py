@@ -37,7 +37,7 @@ logging.basicConfig(filename='/home/pi/solar-protocol/backend/api/v1/poe.log', l
 
 # solarProtocol.py doesn't check the config file for port so it must be hardcoded
 #beijingDST = "132.145.123.98:10000" #"http://beijing.solarprotocol.xyz:10000/"
-beijingDST = "beijing.solarprotocol.xyz"
+beijingDST = "132.145.123.98:10001"
 
 #initialize SolarProtocolClass
 SP = SolarProtocol()

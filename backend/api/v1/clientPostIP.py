@@ -25,8 +25,8 @@ runningDSTList = []
 
 #update this with the SP IP site
 # myIP = 	requests.get('http://whatismyip.akamai.com/').text
-myIP = "beijing.solarprotocol.xyz"
-
+# myIP = "beijing.solarprotocol.xyz"
+myIP = "132.145.123.98"
 
 print("MY IP: " + myIP)
 
